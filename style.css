@@ -1,0 +1,45 @@
+.gauche
+{
+	
+	width:350px;
+	height:300px;
+	display:inline-block;
+	text-align:center;
+	margin-right: 150px
+
+}
+
+
+.centre
+{
+	width:350px;
+	height:300px;
+	display:inline-block;
+	text-align:center;
+	margin-right: 90px;
+} 
+
+.droite
+{
+	width:350px;
+	height:300px;
+	display:inline-block;
+	text-align:center;
+}
+
+.green
+{
+	background-color: green;
+}
+
+
+.blue
+{
+	background-color: blue;
+}
+.red
+{
+	background-color: red;
+}
+
+
