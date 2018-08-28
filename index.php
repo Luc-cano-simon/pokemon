@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+
+
 	<?php 
 
 	ini_set('display_errors', '1'); // pour afficher les erreurs
@@ -20,15 +23,80 @@
 	$grenousse = new grenousse(); 
 	$feunnec = new feunnec();
 
+	
+
+
+
 //aplliquer l'attaque 1 de Marisson sur Grenousse ( sans bouton pour le moment )
-	// echo $marisson -> att1 ( $grenousse );
+	// echo $marisson -> Matt1 ( $grenousse );
 //aplliquer l'attaque 2 de Marisson sur Grenousse ( sans bouton pour le moment )
-	// echo $marisson -> att2 ( $grenousse );
+	// echo $marisson -> Matt2 ( $grenousse );
+
+
+// appliquer l'attaque 1 de Grenousse sur Marisson ( sans bouton pour le moment )
+	// echo $grenousse -> Gatt1 ( $marisson );
 
 
 	
 	?>
 
+	<?php 
+	// bouton attaque 1 de marisson vert Grenousse 
+	
+	if(!empty($_POST['att1'])) 
+	{
+   		 echo $marisson -> Matt1 ( $grenousse );
+	}
+    
+    // bouton attaque 2 de Marisson vert Grenousse 
+
+    	if(!empty($_POST['att2'])) 
+	{
+   		 echo $marisson -> Matt2 ( $grenousse );
+	}
+
+	// bouton attaque 1 de Marisson vert Grenousse 
+
+    	if(!empty($_POST['attGM1'])) 
+	{
+   		 echo $grenousse -> Gatt1 ( $marisson );
+	}	
+
+	// bouton attaque 1 de Marisson vert Grenousse 
+
+    	if(!empty($_POST['attGM2'])) 
+	{
+   		 echo $grenousse -> Gatt2 ( $marisson );
+	}
+
+	?>
+
+
+
+<h3>Les differentes attaques : </h3>
+
+
+<!-- Remise à zero pour les valeurs des cartes -->
+<form method="POST">
+	<input type="submit" href="http://localhost/pok3/" value="carte par défaut"><p></p>
+
+<!-- bouton attaque 1 et 2  de marisson vert Grenousse -->
+	<div class="attMarisson">
+		<input  type="submit" name="att1" value="attaque 1 de Marisson sur Grenousse">
+		<input type="submit" name="att2" value="attaque 2 de Marisson sur Grenousse">
+	</div><p></p>
+
+<!-- bouton attaque 1 et 2 de Grenousse vert Marisson -->	
+	<div class="attGrenousse">
+		<input type="submit" name="attGM1" value="attaque 1 de Grenousse sur Marisson">
+		<input type="submit" name="attGM2" value="attaque 2 de Grenousse sur Marisson">
+	</div>
+
+</form>
+
+<h3>Evolution pokemon</h3>
+	<input type="submit" name="attGM1" value="faire evoluer Marisson">
+<h3>Les differents Pokemon :</h3>
 
 
 
@@ -86,6 +154,7 @@
 			</tr>
 		</table>
 	</div>
+
 	
 	<!-- Case de Grenousse -->
 
@@ -185,15 +254,16 @@
 			<th></th>
 			<td><?php echo $feunnec->aff() ?></td>
 		</tr>
+			
 	</table>
-
 	</div>
-
-
-
 
 
 
 
 </body>	
 </html>
+
+
+
+

@@ -30,23 +30,55 @@ class Pokemon
 		echo '<img src="' . $this->carte . '">';
 	}
 	
-// Fonction première attaque
+// Fonction première attaque Marisson
 
-	public function att1($pv)
+	public function Matt1($pv)
 	{
 		$pv ->pv = $pv ->pv-10;
 	}
 
-// Fonction deuxieme attaque
+// Fonction deuxieme attaque Marisson 
 
-		public function att2($pv)
+		public function Matt2($pv)
 	{
 		$pv ->pv = $pv ->pv-20;
 	}
 
+// Fonction première attaque Grenousse 
+
+		public function Gatt1($pv)
+	{
+		$pv ->pv = $pv ->pv-10;
+	}
 
 
+// Fonction seconde attaque Grenousse 
 
+		public function Gatt2($pv)
+	{
+		$pv ->pv = $pv ->pv-20;
+	}	
+
+// Fonction première attaque Grenousse 
+
+		public function Fatt1($pv)
+	{
+		$pv ->pv = $pv ->pv-10;
+	}
+
+// Fonction seconde attaque Grenousse
+	
+		public function Fatt2($pv)
+	{
+		$pv ->pv = $pv ->pv-20;
+	}
+
+// fonction evolution de Marisson
+
+	public function evol1M($nom)
+	{
+		echo 
+	}
 
 
 
